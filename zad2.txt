@@ -1,0 +1,11 @@
+Zad 2.
+Ograniczenie dolne- dla idealnego przypadku wszystkie struktury napotykają szukany element jako pierwszy. Wszystkie struktury wykonują wtedy ok 2-3 porównań.
+
+Średnia- 
+	bst i rbt: liczba porównań wykonywanych przez drzewo będzie bliska log(n/2)*2.5 (dla przejścia do lewego dziecka są wykonywane 2 porównania, dla prawego 3), gdzie n to rozmiar drzewa.
+	hmap: dla dużych danych można uznać, że każda komórka hmapy to drzewo rbt. Wtedy liczba porównań będzie równa ceil(log(n/2)*2.5/x), gdzie x to rozmiar tablicy hmapy (w moim przypadku 26).
+
+Ograniczenie górne- 
+	bst: dla ładowania pliku gdzie dane są rosnące lub malejące, np. dictionary.txt drzewo będzie efektywnie listą więc liczba porównań będzie równa 2*n dla malejących lub 3*n dla rosnących
+	rbt: jak w średniej
+	hmap: jak w średniej
